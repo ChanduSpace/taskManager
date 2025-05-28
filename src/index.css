@@ -1,0 +1,97 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  transition: background 0.3s;
+}
+
+body.dark {
+  background: #222;
+  color: white;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.column {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  min-height: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .column {
+  background: #333;
+}
+
+.task {
+  background: #ddd;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+body.dark .task {
+  background: #444;
+  color: white;
+}
+
+.add-task {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.4rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.mode-button {
+  position: absolute;
+  right: 60px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
